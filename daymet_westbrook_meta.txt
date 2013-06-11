@@ -1,0 +1,29 @@
+Latitude: 42.434512  Longitude: -72.669926								
+X & Y on Lambert Conformal Conic: 2106285.88 341238.32								
+Tile: 11934								
+Elevation: 179 meters								
+All years; all variables; Daymet Software Version 2.0; Daymet Data Version 2.1.								
+			
+
+					
+Variables and Units: 
+Each daily record consists of 9 variables, described below:. 
+1. year (no units): Year, repeated for each day in the year. 
+2. yday (no units): Integer representing day of year, values ranging from 1-365. Where:
+	yday 1 = January 1
+	yday 365 = December 31 for non-leap years or December 30 for leapyears
+	NOTE: All Daymet years are 1 – 365 days, including leap years. 
+	The Daymet database includes leap-days. Values for December 31 are discarded 
+	from leap years to maintain a 365-day year. 
+3. tmax (degrees C): Daily maximum 2-meter air temperature. 
+4. tmin (degrees C): Daily minimum 2-meter air temperature. 
+5. dayl (s/day): Duration of the daylight period for the day. This calculation is based 
+on the period of the day during which the sun is above a hypothetical flat horizon. 
+6. prcp (mm/day): Daily total precipitation, sum of all forms converted to waterequivalent. 4
+7. srad (W/m^2): Incident shortwave radiation flux density, taken as an average 
+over the daylight period of the day. 
+	NOTE: Daily Total Radiation (MJ/m^2/day) can be calculated as follows:
+		((srad (W/m^2) * dayl (s/day)) / l,000,000)
+8. swe (kg/m^2): Snow water equivalent. The amount of water contained within the 
+snowpack. 
+9. vp (Pa): Water Vapor Pressure. Daily average partial pressure of water vapor. 
