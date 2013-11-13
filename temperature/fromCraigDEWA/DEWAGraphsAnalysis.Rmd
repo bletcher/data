@@ -1,0 +1,37 @@
+DEWA Graphs and Analysis
+========================================================
+
+```{r }
+
+
+
+
+```
+
+```{r slopeSegSlopeDiff graphs}
+
+ggplot( et[ et$segment %in% 2:3, ], aes( slopeSegSlopeDiff ))+
+  stat_ecdf(aes(color=site)) +
+  facet_grid(year~segment)
+
+
+ggplot( et[ et$segment %in% 2:3, ], aes(slopeSegSlopeDiff)) +
+  geom_density(aes(color=site,y = ..scaled..))+
+  scale_x_continuous(lim=c(-10,10)) +
+  facet_wrap(~segment)
+
+ggplot( et[ et$segment %in% 2:3, ], aes(siteYear,slopeSegSlopeDiff)) +
+  geom_boxplot(aes(color=site))+
+#  scale_x_continuous(lim=c(-10,10)) +
+  scale_y_continuous(lim=c(-10,10)) +
+  facet_wrap(~segment)
+
+ggplot( et[ et$segment %in% 2:3, ], aes(site,slope)) +
+  geom_boxplot(aes(color=site))+
+#  scale_x_continuous(lim=c(-10,10)) +
+  scale_y_continuous(lim=c(-10,10)) +
+  theme( axis.text.x  = element_text(angle=90, vjust=0.5)) +
+  facet_wrap(~segment)
+
+```
+
